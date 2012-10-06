@@ -1,0 +1,162 @@
+html,body {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+input, textarea {
+	border: solid thin black;
+}
+
+a {
+	color: #577;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7BB;
+}
+
+
+#twitter_update_list li {
+	list-style: none;
+}
+
+header.primary h1 {
+    font-size: 300%;
+}
+
+header.primary h1:first-letter {
+    font-size: 200%;
+    vertical-align: middle;
+}
+
+header.primary h2 {
+    margin-top: -4em;
+    margin-left: 5em;
+    font-size: 90%;
+}
+
+nav.primary {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+nav.primary ul {
+	list-style: none;
+	display: inline;
+	padding-left: 0;
+}
+
+nav.primary ul li {
+	display: inline;
+	padding-right: 1em;
+}
+
+nav.primary ul li a {
+	color: black;
+	text-decoration: none;
+	border-bottom: solid 2px #00A;
+}
+
+nav.primary ul li a:hover {
+	border-bottom: solid thick #00B;
+}
+
+#content {
+    width: 80%;
+}
+
+aside {
+    float: right;
+    width: 15%;
+}
+
+article h1 {
+	text-transform: uppercase;
+	font-size: 150%;
+	color: #599;
+	margin-top: 2em;
+}
+
+article h1 a {
+	color: #599;
+	text-decoration: none;
+}
+
+article h1 a:hover {
+	color: #7BB;
+}
+
+article header .date {
+	float: left;
+	border: solid thin black;
+	background: #255;
+	margin: 1em;	
+	padding: 1em;
+	color: white;
+	text-align: center;
+}
+
+article header .date .dow {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+article .screenshot {
+	float: left;
+	margin: 1em;	
+	padding: 1em;
+	text-align: center;
+}
+
+footer {
+	padding: 1em;
+	font-size: smaller;
+	text-align: center;
+}
+
+p.code, pre.code {
+	border: solid thin black;
+	background: #BDD;
+	padding: 1em;
+	width: 85%;
+	margin: 2em auto 2em auto;
+
+	font-family: monospace;
+}
+
+.tags {
+	margin-left: 2em;	
+}
+
+.tags span {
+	font-weight: bold;
+}
+
+.tags a {
+	padding: .15em;	
+}
+
+.tags a:hover {
+	background-color: #599;
+	color: white;
+}
+
+.filedetails {
+	font-size: smaller;	
+}
+
+.filedetails span {
+	font-weight: bold;	
+}

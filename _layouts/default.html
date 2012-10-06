@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }} @Jesterpm.net</title>
+	
+	<link rel="openid.server" href="http://jesterpm.net/myid.php" />
+	<link rel="openid.delegate" href="http://jesterpm.net/myid.php" />
+    
+	<link rel="stylesheet" href="/styles/style.css" />
+	<script src="/scripts.js"></script>
+	<script>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23877924-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+<header class="primary">
+    <hgroup>
+        <h1>Jesterpm.net</h1>
+        <h2>That site that never changes</h2>
+    </hgroup>
+
+    <nav class="primary">
+        <ul>
+            <li>
+                <img src="/images/home.png" alt="Home Icon" />
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <img src="/images/blog.png" alt="Blog Icon" />
+                <a href="/blog">Blog</a>
+            </li>
+            <li>
+                <img src="/images/projects.png" alt="Projects Icon" />
+                <a href="/projects">Projects</a>
+            </li>
+            <li>
+                <img src="/images/downloads.png" alt="Downloads Icon" />
+                <a href="/downloads">Downloads</a>
+            </li>
+            <li>
+                <img src="/images/contact.png" alt="Contact Icon" />
+                <a href="/contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="content">
+{{ content }}
+</div>
+
+<footer>
+    Copyright 2008-2012 <a href="/contact">jesterpm</a>
+</footer>
+</body>
+</html>
+
