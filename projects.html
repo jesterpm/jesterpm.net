@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% for project in site.categories.projects %}
+<article>
+<h1>{{ project.title }}</h1>
+<div class="screenshot">
+    <a href="{{ project.screenshot }}.png">
+        <img src="{{ project.screenshot}}_sm.png" alt="Screenshot for {{ project.title }}" />
+    </a>
+</div>
+<p>
+<strong>Start:</strong> {{project.start }}<br />
+<strong>Launch:</strong> {{ project.launch }}
+</p>
+{{ project.content }}
+</article>
+{% endfor %}

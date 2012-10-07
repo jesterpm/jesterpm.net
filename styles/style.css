@@ -1,5 +1,5 @@
-html,body {
-	height: 100%;
+html, body {
+    height: 100%;
 }
 
 body {
@@ -30,25 +30,18 @@ a:hover {
 	list-style: none;
 }
 
-header.primary h1 {
-    font-size: 300%;
+header {
+    margin: 50px auto 0 auto;
+    width: 32em;
 }
 
-header.primary h1:first-letter {
-    font-size: 200%;
-    vertical-align: middle;
+header.primary h1 {
+    font-size: 300%;
+    margin: 0;
 }
 
 header.primary h2 {
-    margin-top: -4em;
-    margin-left: 5em;
     font-size: 90%;
-}
-
-nav.primary {
-    position: absolute;
-    top: 1em;
-    right: 1em;
 }
 
 nav.primary ul {
@@ -73,12 +66,7 @@ nav.primary ul li a:hover {
 }
 
 #content {
-    width: 80%;
-}
-
-aside {
-    float: right;
-    width: 15%;
+    width: 75%;
 }
 
 article h1 {

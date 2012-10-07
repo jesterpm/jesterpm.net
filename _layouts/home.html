@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="openid.server" href="http://jesterpm.net/myid.php" />
+	<link rel="openid.delegate" href="http://jesterpm.net/myid.php" />
+
+    {% include head.html %}
+
+    <script>
+        $(document).ready(function()
+        {
+            var height = $("header").outerHeight();
+            $("header").css("margin-top", Math.max(0, 0.5 * (($(window).height() - height) / 2) + 
+                                                $(window).scrollTop()) + "px");
+            $("#content").css("margin-top", $(window).height() + "px");
+            setTimeout(function()
+            {
+                $("#content").animate({'margin-top': 0}, 1000, 'linear');
+                setTimeout("$('header').animate({'margin-top': '50px'}, 500)", 950);
+            }, 1700);
+            $("body").fadeIn();
+        });
+    </script>
+    <style>
+        #content {
+        }
+    </style>
+</head>
+<body style="display: none">
+{% include header.html %}
+
+<div id="content">
+{{ content }}
+</div>
+
+{% include footer.html %}
+</body>
+</html>
+
+
