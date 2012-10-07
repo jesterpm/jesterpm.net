@@ -11,4 +11,4 @@ windows. It can also create countdowns and timers. Count downs change color and
 start counting up after they reach zero. The font size can now be set for each
 clock.
 
-Utilaclock is available on GitHub at http://github.com/jesterpm/utilaclock.
+Utilaclock is available on [GitHub](http://github.com/jesterpm/utilaclock).
