@@ -12,3 +12,5 @@ start counting up after they reach zero. The font size can now be set for each
 clock.
 
 Utilaclock is available on [GitHub](http://github.com/jesterpm/utilaclock).
+Mac OS X binaries can be downloaded [here](/downloads/utilaclock.dmg)
+([pgp signature](/downloads/utilaclock.dmg.asc)).
