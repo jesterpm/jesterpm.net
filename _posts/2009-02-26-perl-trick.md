@@ -14,6 +14,6 @@ was 12... Now how to get all of the pages that wget doesn't see.
 Now I know just about nothing about perl, but I felt like perl would provide the
 simplest solution. So, for future reference, here's my snazzy one-liner:
 
-    cat lighthousehomeschool.net/navbar.js | perl -e "while (<>) { print \"http://lighthousehomeschool.net/\", /href='([^']+)'>/, \"\n\" }" | xargs wget -m -p
-
-
+    cat lighthousehomeschool.net/navbar.js | perl -e "while (<>) {
+    print \"http://lighthousehomeschool.net/\", /href='([^']+)'>/, \"\n\"
+    }" | xargs wget -m -p

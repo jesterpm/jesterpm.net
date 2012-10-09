@@ -115,7 +115,7 @@ footer {
 	text-align: center;
 }
 
-p.code, pre.code {
+pre {
 	border: solid thin black;
 	background: #BDD;
 	padding: 1em;
@@ -123,23 +123,6 @@ p.code, pre.code {
 	margin: 2em auto 2em auto;
 
 	font-family: monospace;
-}
-
-.tags {
-	margin-left: 2em;	
-}
-
-.tags span {
-	font-weight: bold;
-}
-
-.tags a {
-	padding: .15em;	
-}
-
-.tags a:hover {
-	background-color: #599;
-	color: white;
 }
 
 .filedetails {

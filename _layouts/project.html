@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+{% include header.html %}
+
+<div id="content">
+<article>
+<h1>{{ page.title }}</h1>
+<div class="screenshot">
+    <a href="{{ page.screenshot }}.png">
+        <img src="{{ page.screenshot}}_sm.png" alt="Screenshot for {{ page.title }}" />
+    </a>
+</div>
+<p>
+<strong>Start:</strong> {{page.start }}<br />
+<strong>Launch:</strong> {{ page.launch }}
+</p>
+{{ content }}
+</article>
+</div>
+
+{% include footer.html %}
+</body>
+</html>
+

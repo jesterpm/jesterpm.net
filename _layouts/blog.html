@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+{% include header.html %}
+
+<div id="content">
+<article>
+<header>
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<div class="date"><span class="dow">{{ page.date | date: "%a" }}</span> {{ page.date | date: "%B %d" }}</div>
+</header>
+{{ content }}
+</article>
+</div>
+
+{% include footer.html %}
+</body>
+</html>

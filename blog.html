@@ -8,6 +8,5 @@ layout: default
 <div class="date"><span class="dow">{{ post.date | date: "%a" }}</span> {{ post.date | date: "%B %d" }}</div>
 </header>
 {{ post.content }}
-<div class="tags"><span>Tags:</span> {{ post.tags | array_to_sentence_string }}</div>
 </article>
 {% endfor %}
