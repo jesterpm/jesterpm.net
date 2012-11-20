@@ -21,7 +21,7 @@ end
 task :makejs do
     File.open("scripts.js", "w") {
         |out|
-        Dir["scripts/*.js"].each do |file|
+        Dir["scripts/*.js"].sort.each do |file|
             lines = File.readlines(file)
             out.write lines.join
         end
