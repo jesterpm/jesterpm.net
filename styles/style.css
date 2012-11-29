@@ -67,6 +67,12 @@ nav.primary ul li a:hover {
 
 #content {
     width: 75%;
+    padding-left: 5%;
+}
+
+article {
+    margin-top: 2em;
+    min-height: 8em;
 }
 
 article h1 {
