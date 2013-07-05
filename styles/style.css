@@ -3,71 +3,63 @@ html, body {
 }
 
 body {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-    font-size: 10pt;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 0 1in 0 1.2in;
 }
 
 img {
-	border: none;
-	vertical-align: middle;
+    border: none;
+    vertical-align: middle;
 }
 
 input, textarea {
-	border: solid thin black;
+    border: solid thin black;
 }
 
 a {
-	color: #577;
-	text-decoration: none;
+    color: #577;
 }
 
 a:hover {
-	color: #7BB;
+    color: #7BB;
 }
 
 
 #twitter_update_list li {
-	list-style: none;
+    list-style: none;
 }
 
 header.primary {
-    margin: 50px auto 0 auto;
-    width: 32em;
+    margin-bottom: 0.5in;
 }
 
 header.primary h1 {
-    font-size: 300%;
-    margin: 0;
+    font-size: 36pt;
+    margin-bottom: 0;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 header.primary h2 {
-    font-size: 90%;
+    font-size: 12pt;
+}
+
+nav {
+    font-size: 11pt;
 }
 
 nav.primary ul {
-	list-style: none;
-	display: inline;
-	padding-left: 0;
+    list-style: none;
+    display: inline;
+    padding-left: 0;
 }
 
 nav.primary ul li {
-	display: inline;
-	padding-right: 1em;
-}
-
-nav.primary ul li a {
-	color: black;
-	text-decoration: none;
-	border-bottom: solid 2px #00A;
-}
-
-nav.primary ul li a:hover {
-	border-bottom: solid thick #00B;
-}
-
-#content {
-    width: 75%;
-    padding-left: 5%;
+    display: inline;
+    padding-right: 0.5em;
 }
 
 article {
@@ -76,65 +68,54 @@ article {
 }
 
 article h1 {
-	text-transform: uppercase;
-	font-size: 150%;
-	color: #599;
-	margin-top: 2em;
+    font-size: 18pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
 }
 
-article h1 a {
-	color: #599;
-	text-decoration: none;
+article .date {
+    font-size: 10pt;
 }
 
-article h1 a:hover {
-	color: #7BB;
-}
-
-article header .date {
-	float: left;
-	border: solid thin black;
-	background: #255;
-	margin: 1em;	
-	padding: 1em;
-	color: white;
-	text-align: center;
-}
-
-article header .date .dow {
-	display: block;
-	text-transform: uppercase;
-	font-weight: bold;
+article p {
+    min-width: 25em;
+    max-width: 30em;
+    text-align: justify;
 }
 
 article .screenshot {
-	float: left;
-	margin: 1em;	
-	padding: 1em;
-	text-align: center;
+    float: left;
+    margin: 1em;
+    left: 45em;
+    text-align: center;
     width: 180px;
 }
 
-footer {
-	padding: 1em;
-	font-size: smaller;
-	text-align: center;
-}
-
 pre {
-	border: solid thin black;
-	background: #BDD;
-	padding: 1em;
-	width: 85%;
-	margin: 2em auto 2em auto;
+    border: solid thin black;
+    background: #D0DFDF;
+    padding: 1em;
 
-	font-family: monospace;
+    min-width: 25em;
+    max-width: 45em;
+
+    font-family: monospace;
 }
 
 .filedetails {
-	font-size: smaller;	
+    font-size: smaller;
 }
 
 .filedetails span {
-	font-weight: bold;	
+    font-weight: bold;
 }
+
+footer {
+    width: 30em;
+    margin-top: 0.5in;
+    padding: 1em;
+    font-size: smaller;
+    text-align: center;
+}
+
