@@ -10,7 +10,7 @@
 <article>
 <header>
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-<div class="date"><span class="dow">{{ page.date | date: "%a" }}</span> {{ page.date | date: "%B %d" }}</div>
+<div class="date">{{ page.date | date: "%B %d, %Y" }}</div>
 </header>
 {{ content }}
 </article>

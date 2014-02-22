@@ -80,7 +80,7 @@ article .date {
 
 article p {
     min-width: 25em;
-    max-width: 30em;
+    max-width: 50%;
     text-align: justify;
 }
 
