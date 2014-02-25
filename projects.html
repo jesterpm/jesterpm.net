@@ -2,7 +2,6 @@
 layout: default
 ---
 {% for project in site.categories.projects %}
-<article>
 <h1>{{ project.title }}</h1>
 <div class="screenshot">
     <a href="{{ project.screenshot }}.png">
@@ -14,5 +13,12 @@ layout: default
 <strong>Launch:</strong> {{ project.launch }}
 </p>
 {{ project.content }}
+{% if forloop.last == false %}
+{% comment %}
+    The default layout automatically wraps the content in <article>.
+    If we have multiple elements, we need to continue the pattern.
+{% endcomment %}
 </article>
+<article>
+{% endif %}
 {% endfor %}

@@ -3,6 +3,9 @@ layout: default
 title: Books
 ---
 
+Books
+======
+
 Below is an abridged list of books I am currently reading, have finished, or
 wish to read in the future. If I bothered to list them as read, then I highly
 recommend them.

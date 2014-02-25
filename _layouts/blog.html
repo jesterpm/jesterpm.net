@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    {% include head.html %}
-</head>
-<body>
-{% include header.html %}
-
-<div id="content">
-<article>
-<header>
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-<div class="date">{{ page.date | date: "%B %d, %Y" }}</div>
-</header>
-{{ content }}
-</article>
-</div>
-
-{% include footer.html %}
-</body>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div id="wrapper">
+            {% include header.html %}
+            <article>
+                <header>
+                <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+                <div class="date">{{ page.date | date: "%B %d, %Y" }}</div>
+                </header>
+                {{ content }}
+            </article>
+            <div id="push"></div>
+        </div>
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </body>
 </html>
