@@ -28,6 +28,21 @@ html,body {
     text-shadow: 2px 2px #777;
 }
 
+#header p {
+    margin: 0;
+    padding: 0.25em 1em 0 0;
+    color: white;
+    font-size: 75%;
+    text-align: right;
+    position: absolute;
+    left: -999em;
+}
+
+#header:hover p {
+    position: static;
+    left: 0;
+}
+
 nav {
     font-size: 11pt;
     background: rgba(0,0,0,0.50);
@@ -136,6 +151,25 @@ a:hover {
 img {
     border: none;
     vertical-align: middle;
+}
+
+#about {
+    border: solid 4px black;
+    padding: 1em;
+    min-height: 200px;
+    max-width: 900px;
+    margin: 2em auto 2em auto;
+}
+
+#about h1 {
+    border: none;
+    font-size: 18pt;
+}
+
+#about img {
+    float: right;
+    margin-top: -75px;
+    margin-left: 1em;
 }
 
 article .screenshot {

@@ -1,18 +1,28 @@
 ---
-layout: default
+layout: home
 ---
+
+<article id="about">
+<h1>About Me</h1>
+<p>
+<img src="/images/jesterpm.jpg" alt="jesterpm" />
+My name is Jesse Morgan. I'm a 23 year old Software Engineer currently working
+at <a href="http://amazon.com">Amazon.com</a> and living outside of
+<a href="https://maps.google.com/?ll=47.43877,-122.097931&amp;spn=0.474649,1.056747&amp;t=p&amp;z=10">Seattle, WA</a>.
+Outside of work I enjoy spending time with my wife, camping, hiking, reading,
+and fiddling with HAM radios. I'm also a member of
+<a href="http://kc4x4sar.org">King County 4x4 Search and Rescue</a>.
+</p>
+
+
+</article>
+
 {% for post in site.posts %}
+<article>
 <header>
 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 <div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
 </header>
 {{ post.content }}
-{% if forloop.last == false %}
-{% comment %}
-    The default layout automatically wraps the content in <article>.
-    If we have multiple elements, we need to continue the pattern.
-{% endcomment %}
 </article>
-<article>
-{% endif %}
 {% endfor %}

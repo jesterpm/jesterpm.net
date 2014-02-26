@@ -1,2 +1,4 @@
 auto: false
 exclude: Rakefile
+markdown: redcarpet
+encoding: utf-8
