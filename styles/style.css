@@ -84,6 +84,29 @@ article {
     width: 80%;
 }
 
+article.blog p {
+    position: relative;
+}
+
+article.blog p > a p {
+    position: absolute;
+    bottom: 1em;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+    padding-left: 1em;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+}
+
+article.blog p img {
+    display: block;
+    margin: 1em auto 1em auto;
+    width: 80%;
+    max-width: 600px;
+}
+
 h1 {
     font-size: 24pt;
 }
@@ -175,6 +198,29 @@ img {
     float: right;
     margin-top: -75px;
     margin-left: 1em;
+}
+
+#fullsize {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#fullsize img {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 article .screenshot {
