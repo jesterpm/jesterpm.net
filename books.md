@@ -13,7 +13,6 @@ recommend them.
 Reading Now
 -----------------
 
-* *Mere Christianity* by C.S. Lewis
 * *The Republic* by Plato
 * *The Federalist Papers* by Alexander Hamilton, John Jay, et al.
 * *An Inquire into the Nature and Cause of the Wealth of Nations* by Adam Smith
@@ -21,6 +20,7 @@ Reading Now
 Read Recently
 --------------
 
+* *Mere Christianity* by C.S. Lewis
 * *Economics in One Lesson* by Henry Hazlitt
 * *Paris Underground* by Etta Schiber
 * *The Autobiography of Benjamin Franklin*
