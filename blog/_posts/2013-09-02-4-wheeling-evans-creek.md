@@ -1,8 +1,6 @@
 ---
 title: 4-Wheeling at Evan's Creek
 date: 2013-09-02
-layout: blog
-category: blog
 ---
 
 My dad got a new Jeep (the black one below) that had been built up for

@@ -1,8 +1,6 @@
 ---
 title: Anti-Aircraft Peak
 date: 2014-04-01
-layout: blog
-category: blog
 ---
 
 April 1st I started Tuesday night hikes with a few friends after work.

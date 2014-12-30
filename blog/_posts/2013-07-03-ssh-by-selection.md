@@ -1,8 +1,6 @@
 ---
 title: SSH by Selection
 date: 2013-07-03
-category: blog
-layout: blog
 ---
 This last week was my first on-call rotation at work. With each issue I
 was working on, I would usually find myself looking at some dashboard of

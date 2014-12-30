@@ -1,8 +1,6 @@
 ---
 title: Perl Trick
 date: 2009-02-26
-category: blog
-layout: blog
 ---
 Even though this site is no where near finished, I wanted to write this down.
 

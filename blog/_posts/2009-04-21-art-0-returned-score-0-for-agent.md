@@ -1,8 +1,6 @@
 ---
 title: Art "0" returned score "0" for agent
 date: 2009-04-21
-category: blog
-layout: blog
 ---
 So, I spent quite a bit of time trying to get Podcast Producer running on our
 not-so-correctly-setup xserve. After getting podcast producer connected to

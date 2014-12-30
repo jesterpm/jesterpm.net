@@ -1,8 +1,6 @@
 ---
 title: Let Them Make a Mess
 date: 2009-04-16
-category: blog
-layout: blog
 ---
 Experience has proven Brent's *rogerism*, “let the sheep onto the field and they
 poop all over it.” But making a mess of things is part of the learning process. If

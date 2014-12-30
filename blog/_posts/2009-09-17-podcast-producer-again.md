@@ -1,8 +1,6 @@
 ---
 title: Podcast Producer... Again
 date: 2009-09-17
-category: blog
-layout: blog
 ---
 So, we're still running Leopard Server because I'm waiting for any snow leopard
 issues to get ironed out before I upgrade. We were about to put our internal
