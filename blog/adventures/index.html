@@ -1,0 +1,15 @@
+---
+layout: default
+title: Adventures
+---
+
+<section>
+{% for post in site.tags.adventure %}
+    <article class="{% cycle "style1", "style2" %}">
+        <div class="margin">
+            {% include blogpost.html %}
+        </div>
+    </article>
+{% endfor %}
+</section>
+

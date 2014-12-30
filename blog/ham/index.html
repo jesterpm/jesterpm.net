@@ -1,0 +1,16 @@
+---
+layout: default
+title: HAM Radio
+---
+
+<section>
+{% for post in site.tags.ham %}
+    <article class="{% cycle "style1", "style2" %}">
+        <div class="margin">
+            {% include blogpost.html %}
+        </div>
+    </article>
+{% endfor %}
+</section>
+
+

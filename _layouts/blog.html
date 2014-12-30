@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        <div id="jpmwrapper">
-            {% include header.html %}
-            <article class="blog">
-                <header>
+---
+layout: default
+---
+<section>
+    <article class="{% cycle "style1", "style2" %}">
+        <div class="margin">
+            <header>
                 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-                <div class="date">{{ page.date | date: "%B %d, %Y" }}</div>
-                </header>
-                {{ content }}
-            </article>
-            <div id="jpmpush"></div>
+                <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+            </header>
+            {{ content }}
         </div>
-        <footer>
-            {% include footer.html %}
-        </footer>
-        <div id="fullsize"><img src="" /></div>
-    </body>
-</html>
+    </article>
+
+    <div class="margin">
+        {% include recentblogs.html %}
+    </div>
+</section>

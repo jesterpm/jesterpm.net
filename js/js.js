@@ -1,7 +1,5 @@
 $(document).ready(function()
 {
-    $('div.screenshot a').lightBox();
-
     $(document).click(function() {
         hideFullsize();
     });
@@ -12,14 +10,17 @@ $(document).ready(function()
         }
     });
 
-    $('article.blog p a:has(img)').click(function(e) {
+    function fullscreenClick(e) {
         $('#fullsize img').attr('src', $(this).attr('href'));
         showFullsize();
         e.stopPropagation();
         return false;
-    });
+    }
 
-    $('article.blog p a:has(img)').mouseenter(function (e) {
+    $('p.image a:has(img)').click(fullscreenClick);
+    $('.screenshot a:has(img)').click(fullscreenClick);
+
+    $('p.image a:has(img)').mouseenter(function (e) {
         var img = $(this).children('img');
         img.after("<p>" + img.attr('alt') + "</p>");
     }).mouseleave(function (e) {

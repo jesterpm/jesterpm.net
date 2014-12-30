@@ -2,6 +2,8 @@ exclude: ["Rakefile", "README.md"]
 encoding: utf-8
 timezone: America/Los_Angeles
 
+url: http://jesterpm.net
+
 defaults:
     -
         scope:
@@ -10,3 +12,17 @@ defaults:
         values:
             layout: "blog"
             permalink: /blog/:year/:month/:day/:title.html
+    -
+        scope:
+            path: "projects"
+            type: "posts"
+        values:
+            layout: "project"
+            permalink: /projects/:title.html
+
+prose:
+    media: "images"
+
+sass:
+    sass_dir: _sass
+    style: :compressed

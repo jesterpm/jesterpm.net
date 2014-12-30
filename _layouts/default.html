@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         {% include head.html %}
     </head>
     <body>
-        <div id="jpmwrapper">
-            {% include header.html %}
-            <article>
-                {{ content }}
-            </article>
-            <div id="jpmpush"></div>
+        <header id="header" class="small" title="Gifford Pinchot National Forest. Photo Credit: Daniel Betcher">
+            <div id="title" class="ghost">
+                <h1>@jesterpm</h1>
+            </div>
+        </header>
+        <div id="nav" class="small ghost">
+            {% include nav.html %}
         </div>
+
+        {{ content }}
+
         <footer>
             {% include footer.html %}
         </footer>
+
+        {% include endofbody.html %}
     </body>
 </html>

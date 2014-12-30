@@ -1,6 +1,9 @@
 ---
 title: Kenwood Radio Install
 date: 2014-03-22
+image: http://photos.jesterpm.net/images/2014/03/22/230352.jpg
+tags:
+  - ham
 ---
 
 I recently got a Kenwood TK-780 mobile radio for the Jeep for Search and

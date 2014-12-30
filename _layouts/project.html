@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        <div id="jpmwrapper">
-            {% include header.html %}
-            <article>
-                <h1>{{ page.title }}</h1>
-                <div class="screenshot">
-                    <a href="{{ page.screenshot }}.png">
-                        <img src="{{ page.screenshot}}_sm.png" alt="Screenshot for {{ page.title }}" />
-                    </a>
-                </div>
-                <p>
-                <strong>Start:</strong> {{page.start }}<br />
-                <strong>Launch:</strong> {{ page.launch }}
-                </p>
-                {{ content }}
-            </article>
-            <div id="jpmpush"></div>
-        </div>
-        <footer>
-            {% include footer.html %}
-        </footer>
-    </body>
-</html>
+---
+layout: default
+---
+<section>
+    <article class="margin">
+        <h1>{{ page.title }}</h1>
+        <p class="screenshot img-thumbnail">
+            <a href="{{ page.screenshot }}.png">
+                <img src="{{ page.screenshot}}_sm.png" alt="Screenshot for {{ page.title }}" />
+            </a>
+        </p>
+        <p>
+        <strong>Start:</strong> {{page.start }}<br />
+        <strong>Launch:</strong> {{ page.launch }}
+        </p>
+        {{ content }}
+    </article>
+</section>
