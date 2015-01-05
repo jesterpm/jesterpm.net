@@ -1,3 +1,10 @@
+function fullscreenClick(e) {
+    $('#fullsize img').attr('src', $(this).attr('href'));
+    showFullsize();
+    e.stopPropagation();
+    return false;
+}
+
 $(document).ready(function()
 {
     $(document).click(function() {
@@ -10,15 +17,9 @@ $(document).ready(function()
         }
     });
 
-    function fullscreenClick(e) {
-        $('#fullsize img').attr('src', $(this).attr('href'));
-        showFullsize();
-        e.stopPropagation();
-        return false;
-    }
-
     $('p.image a:has(img)').click(fullscreenClick);
     $('.screenshot a:has(img)').click(fullscreenClick);
+    $('a.js-thumbnail:has(img)').click(fullscreenClick);
 
     $('p.image a:has(img)').mouseenter(function (e) {
         var img = $(this).children('img');
