@@ -1,8 +1,10 @@
 ---
+title: Gifford Camping Map
+date: 2015-01-03
+layout: blog
 permalink: /blog/gifford-map/
 tags:
     - adventure
-published: false
 ---
 
 Over the Fourth of July weekend last year [Daniel Betcher][daniel] and I drove most of
@@ -22,7 +24,7 @@ road. I have aggregated all of the data into the map below.
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
     function displayFeature(feature) {
-        var time = feature.getProperty("time");
+        var time = new Date(feature.getProperty("time")).toLocaleString();
         var description = feature.getProperty("description");
         var photos = feature.getProperty("photos");
         var latitude = feature.getGeometry().get().lat();
@@ -32,7 +34,7 @@ road. I have aggregated all of the data into the map below.
 
         html = "<table class=\"table\"><tr>"
         + "<th>Waypoint</th><td><a href=\"" + url + "\">" + feature.getId() + "</a></td></tr>"
-        + "<th>Last Visit</th><td>" + new Date(time).toLocaleString() + "</td></tr>"
+        + "<th>Last Visit</th><td>" + time + "</td></tr>"
         + "<tr><th>Latitude</th><td>" + latitude + "</td></tr>"
         + "<tr><th>Longitude</th><td>" + longitude + "</td></tr></table>";
 
