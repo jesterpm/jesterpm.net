@@ -1,6 +1,7 @@
 ---
 title: Perl Trick
 date: 2009-02-26
+published: false
 ---
 Even though this site is no where near finished, I wanted to write this down.
 

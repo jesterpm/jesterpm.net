@@ -9,6 +9,7 @@ recorded a screen capture podcast. I pushed publish and watched it go into
 the Xgrid jobs list. Then I watched it stay in the Xgrid jobs list indefinitely
 while the lone Xgrid agent sat idle. I searched to no avail, then the project
 had to sit a while during the Sold Out Youth Conference and Easter services.
+
 I started tackling Podcast Producer again today. With a bit of poking I found
 the last job message in Xgrid admin: "Art "0" returned score "0" for agent".
 Interesting. Sticking it in google lead me to [the solution to my problem][1].
