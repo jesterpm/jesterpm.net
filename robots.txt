@@ -1,0 +1,9 @@
+---
+---
+User-agent: *
+{% for post in site.pages %}{% if post.norobots == true %}
+Disallow: {{ post.url }}
+{% endif %}{% endfor %}
+{% for post in site.posts %}{% if post.norobots == true %}
+Disallow: {{ post.url }}
+{% endif %}{% endfor %}

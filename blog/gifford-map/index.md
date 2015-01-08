@@ -5,6 +5,7 @@ layout: blog
 permalink: /blog/gifford-map/
 tags:
     - adventure
+norobots: true
 ---
 
 Over the Fourth of July weekend last year [Daniel Betcher][daniel] and I drove most of

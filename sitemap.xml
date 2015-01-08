@@ -4,10 +4,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
   {% for post in site.pages %}
+    {% if post.norobots != true %}
     <loc>{{ site.url }}{{post.url}}</loc> 
+    {% endif %}
   {% endfor %}
   {% for post in site.posts %}
+    {% if post.norobots != true %}
     <loc>{{ site.url }}{{post.url}}</loc> 
+    {% endif %}
   {% endfor %}
   </url>
 </urlset>
