@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    min-height: 800px;
+    padding-top: 5%;
+}
+
+.hero-banner-1 {
+    background: url('/images/banner1.jpg') fixed no-repeat center bottom black;
+}
+
+#bio {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 999;
+}
+
+#bio h1 {
+    margin: 0.5em;
+    color: white;
+    border: none;
+}
+
+#bio img {
+    
+}
+
+#bio a, #bio a:hover, #bio a:visited {
+    color: white;
+    font-style: italic;
+}
+
+#bio a.email-btn {
+    vertical-align: top;
+    font-size: 11px;
+    color: #333;
+    font-style: normal;
+}

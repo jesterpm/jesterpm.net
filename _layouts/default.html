@@ -4,20 +4,11 @@
         {% include head.html %}
     </head>
     <body>
-        <header id="header" class="small" title="Gifford Pinchot National Forest. Photo Credit: Daniel Betcher">
-            <div id="title" class="ghost">
-                <h1>jesterpm.net</h1>
-            </div>
-        </header>
-        <div id="nav" class="small ghost">
-            {% include nav.html %}
-        </div>
+        {% include nav.html %}
 
         {{ content }}
 
-        <footer>
-            {% include footer.html %}
-        </footer>
+        {% include footer.html %}
 
         {% include endofbody.html %}
     </body>

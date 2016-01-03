@@ -1,135 +1,99 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        <header id="header" class="fullheight" title="Gifford Pinchot National Forest. Photo Credit: Daniel Betcher">
-            <div id="title" class="ghost">
-                <h1>@jesterpm</h1>
-            </div>
-            <div id="downarrow">
-                <a href="#summary"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-            </div>
-        </header>
+<div class="fullheight hero hero-banner-1" title="Tillamook Rock Lighthouse">
+    <div id="bio" class="ghost">
+        <img src="http://www.gravatar.com/avatar/79c8c68347b1ca9f86380183711ea1ac.png?s=200" alt="jesterpm" class="profile">
+        <div style="">    
+        <h1>Jesse Morgan</h1>
+        <p>Software Development Engineer at <a href="http://amazon.com">Amazon.com</a></p>
+        <p><a href="https://maps.google.com/?ll=47.43877,-122.097931&amp;spn=0.474649,1.056747&amp;t=p&amp;z=10">Renton, WA</a></p>
+        <p>
+            <a class="twitter-follow-button" href="https://twitter.com/jesterpm" data-show-count="false" data-lang="en">@jesterpm</a>
+            <a class="github-button" href="https://github.com/jesterpm">GitHub @jesterpm</a>
+            <a class="btn btn-default btn-xs email-btn" href="mailto:jesse@jesterpm.net"><span class="glyphicon glyphicon-envelope"></span> Email</a>
+        </p>
+        </div>
+        <p class="clearfix"></p>
+    </div>
+</div>
 
-        <div id="nav" class="ghost">
-            <nav>
-                <ul>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="/downloads.html">Downloads</a></li>
-                </ul>
-            </nav>
+<section id="blog" class="clearfix">
+    <div class="margin">
+        <a link="blog"></a>
+        <h1>Blog</h1>
+
+        {% assign post = site.categories.blog[0] %}
+        {% include blogpost.html %}
+
+        {% include recentblogs.html %}
+    </div>
+</section>
+
+<section id="books" class="style2 clearfix">
+    <div class="margin">
+    <a link="books"></a>
+
+    <div class="clearfix">
+        <div class="col-md-12">
+            <h1 id="books">Books</h1>
+            <p>Below is an abridged list of books I am currently reading, have finished, or
+            wish to read in the future.</p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="col-md-4">
+            <h2 id="reading-now">Reading Now</h2>
+            <ul>
+            {% for post in site.categories.reading %}
+            <li><em>{{ post.title }}</em> {% if post.author %}by {{ post.author }}{% endif %}</li>
+            {% endfor %}
+            </ul>
         </div>
 
-        <section id="summary" class="clearfix style2">
-            <a link="summary"></a>
-            <div class="margin">
-                <div id="about" class="col-md-8">
-                    <h1>About Me</h1>
-                    <img src="http://www.gravatar.com/avatar/79c8c68347b1ca9f86380183711ea1ac.png?s=200" alt="jesterpm" style="float: left" class="img-rounded">
-                    <p>
-                    My name is Jesse Morgan. I'm a 25 year old Software Engineer working
-                    at <a href="http://amazon.com">Amazon.com</a> and living outside of
-                    <a href="https://maps.google.com/?ll=47.43877,-122.097931&amp;spn=0.474649,1.056747&amp;t=p&amp;z=10">Seattle, WA</a>.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h1>Contact</h1>
-                    <p><a class="twitter-follow-button" href="https://twitter.com/jesterpm" data-show-count="false" data-lang="en">@jesterpm</a>
-                    <p><a class="github-button" href="https://github.com/jesterpm">GitHub @jesterpm</a>
-                    <p><a class="btn btn-default btn-xs" href="mailto:jesse@jesterpm.net"><span class="glyphicon glyphicon-envelope"></span> Email</a></p>
-                </div>
+        <div class="col-md-4">
+            <h2 id="read-recently">Read Recently</h2>
+            <ul>
+            {% for post in site.categories.completed %}
+                <li><em>{{ post.title }}</em> {% if post.author %}by {{ post.author }}{% endif %}</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <h2 id="to-read">To Read</h2>
+            <ul>
+              <li><em>Brave New World</em> by Aldous Huxley</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="projects" class="clearfix">
+    <div class="margin">
+        <a link="projects"></a>
+        <div class="clearfix">
+            <div class="col-md-12">
+                <h1>Projects</h1>
             </div>
-        </section>
-
-        <section id="blog" class="clearfix">
-            <div class="margin">
-                <a link="blog"></a>
-                <h1>Blog</h1>
-
-                {% assign post = site.categories.blog[0] %}
-                {% include blogpost.html %}
-
-                {% include recentblogs.html %}
+        </div>
+        {% for post in site.categories.projects limit:2 %}
+            <div class="col-md-4">
+                <h2>{{ post.title }}</h2>
+                <p><img src="{{ post.screenshot}}_sm.png" alt="Screenshot for {{ post.title }}"></p>
+                <p>{{ post.excerpt }}</p>
+                <p><a href="{{ post.url }}" class="btn btn-primary">Details</a></p>
             </div>
-        </section>
-
-        <section id="books" class="style2 clearfix">
-            <div class="margin">
-            <a link="books"></a>
-
-            <div class="clearfix">
-                <div class="col-md-12">
-                    <h1 id="books">Books</h1>
-                    <p>Below is an abridged list of books I am currently reading, have finished, or
-                    wish to read in the future.</p>
-                </div>
-            </div>
-
-            <div class="clearfix">
-                <div class="col-md-4">
-                    <h2 id="reading-now">Reading Now</h2>
-                    <ul>
-                    {% for post in site.categories.reading %}
-                    <li><em>{{ post.title }}</em> {% if post.author %}by {{ post.author }}{% endif %}</li>
-                    {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h2 id="read-recently">Read Recently</h2>
-                    <ul>
-                    {% for post in site.categories.completed %}
-                        <li><em>{{ post.title }}</em> {% if post.author %}by {{ post.author }}{% endif %}</li>
-                    {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h2 id="to-read">To Read</h2>
-                    <ul>
-                      <li><em>Brave New World</em> by Aldous Huxley</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section id="projects" class="clearfix">
-            <div class="margin">
-                <a link="projects"></a>
-                <div class="clearfix">
-                    <div class="col-md-12">
-                        <h1>Projects</h1>
-                    </div>
-                </div>
-                {% for post in site.categories.projects limit:2 %}
-                    <div class="col-md-4">
-                        <h2>{{ post.title }}</h2>
-                        <p><img src="{{ post.screenshot}}_sm.png" alt="Screenshot for {{ post.title }}"></p>
-                        <p>{{ post.excerpt }}</p>
-                        <p><a href="{{ post.url }}" class="btn btn-primary">Details</a></p>
-                    </div>
-                {% endfor %}
-                <div class="col-md-4">
-                    <h2>More Projects</h2>
-                    <ul>
-                    {% for post in site.categories.projects offset:2 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            {% include footer.html %}
-        </footer>
-
-        {% include endofbody.html %}
-    </body>
-</html>
+        {% endfor %}
+        <div class="col-md-4">
+            <h2>More Projects</h2>
+            <ul>
+            {% for post in site.categories.projects offset:2 %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

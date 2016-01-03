@@ -1,92 +1,12 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     color: #404040;
-    color: rgba(0,0,0,0.75);
 }
-
-#header {
-    background: url('/images/header-1920.jpg') fixed no-repeat center bottom black;
-    z-index: 999;
-}
-
-#header.small {
-    background: url('/images/bannera.jpg') no-repeat left top black;
-    height: 292px;
-}
-
-#header #title {
-    padding: 1em;
-    width: 75%;
-    margin: auto;
-    position: relative;
-    top: 20%;
-}
-
-#header h1 {
-    margin: 0;
-    color: white;
-    border: none;
-}
-
-#downarrow {
-    position: relative;
-    width: 100%;
-    top: 90%;
-    margin-top: -72pt;
-    font-size: 36pt;
-    text-align: center;
-}
-
-#downarrow a {
-    color: white;
-}
-
-#downarrow a:hover {
-    color: #E8E8E8;
-}
-
-#nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-#nav.small {
-    position: static;
-}
-
-#nav.small nav {
-    margin-top: -2em;
-}
-
-nav {
-    text-align: left;
-    padding: 0.1em 0 0.5em 1em;
-    letter-spacing: 1px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    border-bottom: solid 1px white;
-}
-
-nav a:hover {
-    color: white;
-    border-bottom: solid 1px #777;
-}
-
-nav ul {
-    list-style: none;
-    display: inline;
-    padding-left: 0;
-}
-
-nav ul li {
-    display: inline;
-    padding-right: 1em;
-}
-
 
 footer {
     text-align: center;
@@ -94,15 +14,18 @@ footer {
     padding-bottom: 2em;
 }
 
-section#books {
-    background: url('/images/book.png') no-repeat left top #F5F5F5;
-    min-height: 500px;
+h1, h1 a, h3, h3 a, h4, h4 a, h5, h5 a{
+    color: #404040;
+    color: rgba(0,0,0,0.75);
+    text-decoration: none;
 }
 
-@media (min-width: 992px) {
-    section#books {
-        background: url('/images/book3.png') no-repeat left bottom #F5F5F5;
-    }
+h1 a:hover {
+    color: #777;
+}
+
+.left {
+    float: left;
 }
 
 .style2 {
@@ -140,10 +63,6 @@ article {
 
 img {
     max-width: 100%;
-}
-
-#about img {
-    margin-right: 1em;
 }
 
 p.image {
@@ -201,6 +120,7 @@ article .screenshot {
     text-align: center;
     width: 180px;
 }
+
 .filedetails {
     font-size: smaller;
 }
@@ -209,12 +129,7 @@ article .screenshot {
     font-weight: bold;
 }
 
-h1, h1 a, h3, h3 a, h4, h4 a, h5, h5 a{
-    color: #404040;
-    color: rgba(0,0,0,0.75);
-    text-decoration: none;
-}
-
-h1 a:hover {
-    color: #777;
+img.profile {
+    border: solid 2px #6B6B6B;
+    border-radius: 50%;
 }
