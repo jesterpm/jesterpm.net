@@ -1,0 +1,22 @@
+<section>
+    <div class="margin">
+        <h1>Downloads</h1>
+        <div id="dlcontent" class="clearfix">
+            <noscript>This page is rendered with javascript. Please visit the <a href="http://downloads.jesterpm.net/downloads">non-javascript downloads page</a>.</noscript>
+            <p id="msg">Loading downloads... If downloads do not appear, please visit the old <a href="http://downloads.jesterpm.net/downloads">downloads page</a></p>
+        </div>
+        {% include endofbody.html %}
+        <script src="/js/underscore-min.js"></script>
+        <script src="/js/backbone-min.js"></script>
+        <script src="/js/downloads.js"></script>
+        <script type="text/template" id="download-template">
+            <h3><%- name %></h3>
+            <p><%= description %></p>
+            <p class="filedetails">
+                <span>Type:</span> <%- type %>
+                <span>Downloads:</span> <%- hits %>
+            </p>
+            <p><a class="btn btn-primary" href="<%- href %>">Download</a></p>
+        </script>
+    </div>
+</section>
