@@ -1,11 +1,10 @@
 .hero {
     position: relative;
-    min-height: 800px;
-    padding-top: 5%;
+    height: 100%;
 }
 
 .hero-banner-1 {
-    background: url('/images/banner1.jpg') fixed no-repeat center bottom black;
+    background: url('/images/helens-descent.jpg') fixed no-repeat center center black;
 }
 
 #bio {
@@ -14,8 +13,10 @@
     margin: 0 auto;
     padding: 1em;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #bio h1 {
@@ -24,8 +25,17 @@
     border: none;
 }
 
+#bio .profile {
+    float: left;
+    margin-right: 1em;
+}
+
 #bio img {
     
+}
+
+#bio p {
+    margin-bottom: 1.5em;
 }
 
 #bio a, #bio a:hover, #bio a:visited {

@@ -2,13 +2,10 @@
 title: Gifford Camping Map
 date: 2015-01-03
 layout: blog
-permalink: /blog/gifford-map/
-tags:
-    - adventure
 norobots: true
 ---
 
-Over the Fourth of July weekend last year [Daniel Betcher][daniel] and I drove most of
+Over the Fourth of July weekend in 2014, [Daniel Betcher][daniel] and I drove most of
 Forest Road 23 in [Gifford Pinchot National Forest][gifford] in search of the
 perfect camping spot for a large group camping trip later that summer. We
 traveled to the end of almost every road my Jeep could squeeze down off NF-23
