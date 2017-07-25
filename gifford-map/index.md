@@ -58,7 +58,7 @@ road. I have aggregated all of the data into the map below.
             mapTypeId: google.maps.MapTypeId.TERRAIN
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var features = map.data.loadGeoJson('/blog/gifford-map/gifford-data.geojson');
+        var features = map.data.loadGeoJson('/gifford-map/gifford-data.geojson');
 
 
         map.data.addListener('click', function(event) {
