@@ -5,7 +5,7 @@ $(function() {
 
     var DownloadList = Backbone.Collection.extend({
         model: Download,
-        url: "http://downloads.jesterpm.net/downloads.jsonp",
+        url: "https://www.jesterpm.net/downloads.jsonp",
         sync: function (method, collection, options) {
             options.dataType = "jsonp";
             Backbone.sync(method, collection, options);
