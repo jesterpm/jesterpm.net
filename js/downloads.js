@@ -1,13 +1,13 @@
 $(function() {
-	var Download = Backbone.Model.extend({
-        idAttribute: "filename"
-	});
+    var Download = Backbone.Model.extend({
+          idAttribute: "filename"
+    });
 
     var DownloadList = Backbone.Collection.extend({
         model: Download,
-        url: "https://www.jesterpm.net/downloads.jsonp",
+        url: "https://ltbsre4iaf.execute-api.us-west-2.amazonaws.com/prod/summary",
         sync: function (method, collection, options) {
-            options.dataType = "jsonp";
+            options.dataType = "json";
             Backbone.sync(method, collection, options);
         }
     });
@@ -39,13 +39,13 @@ $(function() {
             Downloads.fetch();
         },
         loading: function() {
-            this.message.html("Loading downloads... If downloads do not appear, please visit the old <a href=\"http://downloads.jesterpm.net/downloads\">downloads page</a>");
+            this.message.html("Loading...");
         },
         success: function() {
             this.message.empty();
         },
         failed: function() {
-            this.message.html("Failed Loading downloads. Please visit the old <a href=\"http://downloads.jesterpm.net/downloads\">downloads page</a>");
+            this.message.html("Failed to load downloads.");
         },
         addOne: function(download) {
             var view = new DownloadView({model: download});
