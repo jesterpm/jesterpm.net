@@ -9,6 +9,9 @@ $(function() {
         sync: function (method, collection, options) {
             options.dataType = "json";
             Backbone.sync(method, collection, options);
+        },
+        comparator: function(a, b) {
+          return b.get('hits') - a.get('hits');
         }
     });
 
@@ -36,6 +39,7 @@ $(function() {
             this.listenTo(Downloads, 'request', this.loading);
             this.listenTo(Downloads, 'sync', this.success);
             this.listenTo(Downloads, 'error', this.failed);
+            this.listenTo(Downloads, 'sort', this.addAll);
             Downloads.fetch();
         },
         loading: function() {
@@ -52,6 +56,7 @@ $(function() {
             this.$el.append(view.render().el);
         },
         addAll: function() {
+            this.$el.empty();
             Downloads.each(this.addOne, this);
         }
     });
