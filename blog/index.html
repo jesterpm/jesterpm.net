@@ -5,7 +5,7 @@ title: Blog
 
 <section>
 {% for post in site.categories.blog %}
-    <article class="{% cycle "style1", "style2" %}">
+    <article class="h-entry {% cycle "style1", "style2" %}">
         <div class="margin">
             {% include blogpost.html %}
         </div>

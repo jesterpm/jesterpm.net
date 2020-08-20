@@ -2,13 +2,15 @@
 layout: default
 ---
 <section>
-    <article class="{% cycle "style1", "style2" %}">
+    <article class="h-entry {% cycle "style1", "style2" %}">
         <div class="margin">
             <header>
-                <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-                <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+                <h1><a class="p-name u-url" href="{{ page.url }}">{{ page.title }}</a></h1>
+                <time class="dt-published date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
             </header>
-            {{ content }}
+            <div class="e-content">
+                {{ content }}
+            </div>
         </div>
     </article>
 </section>
